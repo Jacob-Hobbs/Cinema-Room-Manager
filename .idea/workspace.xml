@@ -5,9 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c040b7e7-0cf9-4294-9c01-9c7d00dc48c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/classes/java/Cinema_Room_Manager.Cinema_Room_Manager-task-build-classes-java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/classes/java/Cinema_Room_Manager.Cinema_Room_Manager-task-build-classes-java.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/classes/java/Cinema_Room_Manager.Cinema_Room_Manager-task-build-classes-java.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/generated/sources/annotationProcessor/java/Cinema_Room_Manager.Cinema_Room_Manager-task-build-generated-sources-annotationProcessor-java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/generated/sources/annotationProcessor/java/Cinema_Room_Manager.Cinema_Room_Manager-task-build-generated-sources-annotationProcessor-java.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/generated/sources/annotationProcessor/java/Cinema_Room_Manager.Cinema_Room_Manager-task-build-generated-sources-annotationProcessor-java.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/generated/sources/headers/java/Cinema_Room_Manager.Cinema_Room_Manager-task-build-generated-sources-headers-java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/generated/sources/headers/java/Cinema_Room_Manager.Cinema_Room_Manager-task-build-generated-sources-headers-java.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/generated/sources/headers/java/Cinema_Room_Manager.Cinema_Room_Manager-task-build-generated-sources-headers-java.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/reports/tests/Cinema_Room_Manager.Cinema_Room_Manager-task-build-reports-tests.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/reports/tests/Cinema_Room_Manager.Cinema_Room_Manager-task-build-reports-tests.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/reports/tests/Cinema_Room_Manager.Cinema_Room_Manager-task-build-reports-tests.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/test-results/Cinema_Room_Manager.Cinema_Room_Manager-task-build-test-results.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/test-results/Cinema_Room_Manager.Cinema_Room_Manager-task-build-test-results.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/test-results/Cinema_Room_Manager.Cinema_Room_Manager-task-build-test-results.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/tmp/Cinema_Room_Manager.Cinema_Room_Manager-task-build-tmp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/tmp/Cinema_Room_Manager.Cinema_Room_Manager-task-build-tmp.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Cinema Room Manager/task/build/tmp/Cinema_Room_Manager.Cinema_Room_Manager-task-build-tmp.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/ProfitCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema Room Manager/Calculate the profit/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/Calculate the profit/task-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cinema Room Manager/Print seats/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/Print seats/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema Room Manager/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/lesson-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema Room Manager/task/out/production/classes/cinema/Cinema.class" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/task/out/production/classes/cinema/Cinema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema Room Manager/task/out/production/classes/cinema/Menu.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Cinema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Layout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema Room Manager/task/test/CinemaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/task/test/CinemaTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +69,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Cinema.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Menu.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Layout.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/ProfitCalculator.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Cinema Room Manager/task/test/CinemaTests.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -44,7 +83,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Edu.Yaml.Migrate": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -78,6 +119,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SqlInitializationState">
     <taskDatabasesInitialized>
+      <option value="jdbc:h2:file:C:/Users/Jacob/Desktop/Cinema Room Manager/Cinema Room Manager/Calculate the profit/db/db" />
       <option value="jdbc:h2:file:C:/Users/Jacob/Desktop/Cinema Room Manager/Cinema Room Manager/Print seats/db/db" />
     </taskDatabasesInitialized>
   </component>
@@ -88,7 +130,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706922119999</updated>
-      <workItem from="1706922121163" duration="4562000" />
+      <workItem from="1706922121163" duration="6523000" />
     </task>
     <servers />
   </component>

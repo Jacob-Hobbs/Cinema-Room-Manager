@@ -1,16 +1,14 @@
 package cinema;
 
-import java.sql.Array;
-
-public class Menu {
+public class Layout {
 
     private final String[][] cinemaArray;
 
-    public Menu() {
+    public Layout() {
         this.cinemaArray = new String[9][18];
     }
 
-    // Controls the execution order of program statements
+    // Controls the execution order of Layout statements
     public void start() {
         initializeEmptyCinema();
         printEmptyCinema();

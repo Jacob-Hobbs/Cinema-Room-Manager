@@ -28,7 +28,6 @@ public class Menu {
                     System.out.println();
                     int rowNum = profitCalculator.getRowNumber();
                     int seatNum = profitCalculator.getSeatNumber();
-
                     if (rowNum > layout.getRows() || seatNum > layout.getSeats()) {
                         System.out.println();
                         System.out.println("Wrong input!");
@@ -48,10 +47,8 @@ public class Menu {
             } else if (selection == 3) {
                 System.out.println();
                 System.out.println("Number of purchased tickets: " + layout.getPurchasedTickets());
-
                 double percentage = ((double)layout.getPurchasedTickets()/(numOfRows * numOfSeats)) * 100;
                 String formattedPercentage = String.format("%.2f", percentage);
-
                 System.out.println("Percentage: " + formattedPercentage + "%");
                 System.out.println("Current income: $" + layout.getCurrentIncome());
                 System.out.println("Total income: $" +

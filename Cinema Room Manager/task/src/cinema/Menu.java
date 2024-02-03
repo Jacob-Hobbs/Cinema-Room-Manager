@@ -24,11 +24,38 @@ public class Menu {
             if (selection == 1) {
                 layout.printCinema(numOfRows, numOfSeats);
             } else if (selection == 2) {
-                int rowNum = profitCalculator.getRowNumber();
-                int seatNum = profitCalculator.getSeatNumber();
-                layout.occupySeat(rowNum, seatNum);
-                System.out.println("Ticket price: $" +
-                        profitCalculator.calculateSeatCost(rowNum, numOfRows, numOfSeats));
+                while (true) {
+                    System.out.println();
+                    int rowNum = profitCalculator.getRowNumber();
+                    int seatNum = profitCalculator.getSeatNumber();
+
+                    if (rowNum > layout.getRows() || seatNum > layout.getSeats()) {
+                        System.out.println();
+                        System.out.println("Wrong input!");
+                    } else if (!layout.occupySeat(rowNum, seatNum,
+                            profitCalculator.calculateSeatCost(rowNum, numOfRows, numOfSeats))) {
+                        System.out.println();
+                        System.out.println("That ticket has already been purchased!");
+                    } else {
+                        System.out.println();
+                        layout.occupySeat(rowNum, seatNum,
+                                profitCalculator.calculateSeatCost(rowNum, numOfRows, numOfSeats));
+                        System.out.println("Ticket price: $" +
+                                profitCalculator.calculateSeatCost(rowNum, numOfRows, numOfSeats));
+                        break;
+                    }
+                }
+            } else if (selection == 3) {
+                System.out.println();
+                System.out.println("Number of purchased tickets: " + layout.getPurchasedTickets());
+
+                double percentage = ((double)layout.getPurchasedTickets()/(numOfRows * numOfSeats)) * 100;
+                String formattedPercentage = String.format("%.2f", percentage);
+
+                System.out.println("Percentage: " + formattedPercentage + "%");
+                System.out.println("Current income: $" + layout.getCurrentIncome());
+                System.out.println("Total income: $" +
+                        profitCalculator.calculateTotalProfit(numOfRows, numOfSeats));
             } else {
                 break;
             }

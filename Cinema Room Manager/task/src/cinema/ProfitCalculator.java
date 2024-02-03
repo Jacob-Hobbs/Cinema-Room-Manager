@@ -42,7 +42,8 @@ public class ProfitCalculator {
     // Intakes row and seat number and outputs ticket cost
     public void purchaseTicket(int numOfRows, int numOfSeats, Layout layout,
                                int rowNum, int seatNum) {
-        layout.occupySeat(rowNum, seatNum);
+        ProfitCalculator profitCalculator = new ProfitCalculator();
+        layout.occupySeat(rowNum, seatNum, profitCalculator.calculateSeatCost(rowNum, numOfRows, numOfSeats));
         layout.printCinema(numOfRows, numOfSeats);
     }
 
@@ -85,7 +86,7 @@ public class ProfitCalculator {
     }
 
     // Calculates total profit based on number of rows and seats in cinema
-    public static int calculateTotalProfit(int numOfRows, int numOfSeats) {
+    public int calculateTotalProfit(int numOfRows, int numOfSeats) {
         int totalSeats = numOfRows * numOfSeats;
         if (totalSeats <= 60) {
             return totalSeats * 10;

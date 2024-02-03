@@ -5,11 +5,18 @@ public class Layout {
     private final String[][] cinemaArray;
     private final int rows;
     private final int seats;
+    private int purchasedTickets;
+
+    private double percentOccupancy;
+    private int currentIncome;
 
     public Layout(int rows, int seats) {
         this.cinemaArray = new String[rows + 2][seats + seats + 2];
         this.rows = rows;
         this.seats = seats;
+        this.purchasedTickets = 0;
+        this.percentOccupancy = 0.00;
+        this.currentIncome = 0;
     }
 
     // Controls the execution order of Layout statements
@@ -55,8 +62,17 @@ public class Layout {
     }
 
     // Marks chosen seat as occupied with a "B"
-    public void occupySeat(int pickedRow, int pickedSeat) {
-        this.cinemaArray[pickedRow + 1][(pickedSeat + pickedSeat) + 1] = "B";
+    public Boolean occupySeat(int pickedRow, int pickedSeat, int seatCost) {
+
+        if (this.cinemaArray[pickedRow + 1][pickedSeat + pickedSeat + 1].equals("S")) {
+            this.cinemaArray[pickedRow + 1][(pickedSeat + pickedSeat) + 1] = "B";
+            this.purchasedTickets += 1;
+            this.currentIncome += seatCost;
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
     // Getter for cinemaArray
@@ -66,11 +82,19 @@ public class Layout {
 
     // Getter for rows
     public int getRows() {
-        return rows;
+        return this.rows;
     }
 
     // Getter for seats
     public int getSeats() {
-        return seats;
+        return this.seats;
+    }
+
+    public int getPurchasedTickets() {
+        return this.purchasedTickets;
+    }
+
+    public int getCurrentIncome() {
+        return this.currentIncome;
     }
 }

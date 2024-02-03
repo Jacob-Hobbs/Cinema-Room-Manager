@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c040b7e7-0cf9-4294-9c01-9c7d00dc48c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Layout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/ProfitCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/ProfitCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema Room Manager/Add menu to your application/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/Add menu to your application/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema Room Manager/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/lesson-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Cinema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cinema Room Manager/task/test/CinemaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema Room Manager/task/test/CinemaTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +36,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Cinema.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Layout.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/Menu.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Cinema Room Manager/task/src/cinema/ProfitCalculator.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Cinema Room Manager/task/test/CinemaTests.java" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -84,6 +90,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SqlInitializationState">
     <taskDatabasesInitialized>
+      <option value="jdbc:h2:file:C:/Users/Jacob/Desktop/Cinema Room Manager/Cinema Room Manager/Add menu to your application/db/db" />
       <option value="jdbc:h2:file:C:/Users/Jacob/Desktop/Cinema Room Manager/Cinema Room Manager/Calculate the profit/db/db" />
       <option value="jdbc:h2:file:C:/Users/Jacob/Desktop/Cinema Room Manager/Cinema Room Manager/Print seats/db/db" />
       <option value="jdbc:h2:file:C:/Users/Jacob/Desktop/Cinema Room Manager/Cinema Room Manager/Set the ticket price/db/db" />
@@ -96,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706922119999</updated>
-      <workItem from="1706922121163" duration="13331000" />
+      <workItem from="1706922121163" duration="14893000" />
     </task>
     <servers />
   </component>

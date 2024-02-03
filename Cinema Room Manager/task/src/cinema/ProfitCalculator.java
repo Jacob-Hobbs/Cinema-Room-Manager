@@ -21,7 +21,8 @@ public class ProfitCalculator {
         int rowNum = getRowNumber();
         int seatNum = getSeatNumber();
         System.out.println();
-        System.out.println("Ticket price: $" + calculateSeatCost(rowNum, numOfRows, numOfSeats));
+        System.out.println("Ticket price: $" + calculateSeatCost(rowNum, numOfRows,
+                numOfSeats));
         System.out.println();
         purchaseTicket(numOfRows, numOfSeats, layout, rowNum, seatNum);
     }
@@ -39,7 +40,8 @@ public class ProfitCalculator {
     }
 
     // Intakes row and seat number and outputs ticket cost
-    public void purchaseTicket(int numOfRows, int numOfSeats, Layout layout, int rowNum, int seatNum) {
+    public void purchaseTicket(int numOfRows, int numOfSeats, Layout layout,
+                               int rowNum, int seatNum) {
         layout.occupySeat(rowNum, seatNum);
         layout.printCinema(numOfRows, numOfSeats);
     }

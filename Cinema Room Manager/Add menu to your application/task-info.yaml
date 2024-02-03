@@ -340,6 +340,192 @@ files:
           }
       }
     learner_created: false
+  - name: src/cinema/ProfitCalculator.java
+    visible: true
+    text: |
+      package cinema;
+      
+      import java.util.Scanner;
+      
+      public class ProfitCalculator {
+      
+          private final Scanner scanner;
+      
+          public ProfitCalculator() {
+              this.scanner = new Scanner(System.in);
+          }
+      
+          // Controls the execution order of ProfitCalculator statements
+          public void start() {
+              int numOfRows = numOfRows();
+              int numOfSeats = numOfSeats();
+              System.out.println();
+              Layout layout = new Layout(numOfRows, numOfSeats);
+              layout.start(numOfRows, numOfSeats);
+              System.out.println();
+              int rowNum = getRowNumber();
+              int seatNum = getSeatNumber();
+              System.out.println();
+              System.out.println("Ticket price: $" + calculateSeatCost(rowNum, numOfRows, numOfSeats));
+              System.out.println();
+              purchaseTicket(numOfRows, numOfSeats, layout, rowNum, seatNum);
+          }
+      
+          // Retrieves requested row number from user
+          public int getRowNumber() {
+              System.out.println("Enter a row number:");
+              return Integer.valueOf(scanner.nextLine());
+          }
+      
+          // Retrieves requested seat number from user
+          public int getSeatNumber() {
+              System.out.println("Enter a seat number in that row:");
+              return Integer.valueOf(scanner.nextLine());
+          }
+      
+          // Intakes row and seat number and outputs ticket cost
+          public void purchaseTicket(int numOfRows, int numOfSeats, Layout layout, int rowNum, int seatNum) {
+              layout.occupySeat(rowNum, seatNum);
+              layout.printCinema(numOfRows, numOfSeats);
+          }
+      
+          // calculates and returns seat cost based on location in cinema
+          public int calculateSeatCost(int rowNum, int numOfRows, int numOfSeats) {
+              int totalSeats = numOfRows * numOfSeats;
+              int frontHalfRows = (numOfRows / 2);
+              if (totalSeats <= 60 || rowNum <= frontHalfRows) {
+                  return 10;
+              } else {
+                  return 8;
+              }
+          }
+      
+          // Gathers and returns the number of rows in the cinema
+          public int numOfRows() {
+              System.out.println("Enter the number of rows:");
+              return Integer.valueOf(scanner.nextLine());
+          }
+      
+          // Gathers and returns the number of seats in the cinema
+          public int numOfSeats() {
+              System.out.println("Enter the number of seats in each row:");
+              return Integer.valueOf(scanner.nextLine());
+          }
+      
+          // Accepts input to declare number of rows and seats in cinema
+          public void numOfRowsAndSeats() {
+              System.out.println("Enter the number of rows:");
+              int numOfRows = Integer.valueOf(scanner.nextLine());
+              System.out.println("Enter the number of seats in each row:");
+              int numOfSeats = Integer.valueOf(scanner.nextLine());
+              totalIncome(numOfRows, numOfSeats);
+          }
+      
+          // Outputs total income of whole cinema
+          public void totalIncome(int numOfRows, int numOfSeats) {
+              System.out.println("Total income:");
+              System.out.println("$" + calculateTotalProfit(numOfRows, numOfSeats));
+          }
+      
+          // Calculates total profit based on number of rows and seats in cinema
+          public static int calculateTotalProfit(int numOfRows, int numOfSeats) {
+              int totalSeats = numOfRows * numOfSeats;
+              if (totalSeats <= 60) {
+                  return totalSeats * 10;
+              } else {
+                  int frontHalfRows = (numOfRows / 2);
+                  int backHalfRows = (numOfRows - frontHalfRows);
+                  return ((backHalfRows * numOfSeats) * 8) + ((frontHalfRows * numOfSeats) * 10);
+              }
+          }
+      }
+    learner_created: true
+  - name: src/cinema/Layout.java
+    visible: true
+    text: |
+      package cinema;
+      
+      public class Layout {
+      
+          private final String[][] cinemaArray;
+          private final int rows;
+          private final int seats;
+      
+          public Layout(int rows, int seats) {
+              this.cinemaArray = new String[rows + 2][seats + seats + 2];
+              this.rows = rows;
+              this.seats = seats;
+          }
+      
+          // Controls the execution order of Layout statements
+          public void start(int rows, int seats) {
+              initializeEmptyCinema(rows, seats);
+              printCinema(rows, seats);
+          }
+      
+          // Initializes empty cinema seats within 2D Array
+          public void initializeEmptyCinema(int rows, int seats) {
+              for (int i = 1; i < (rows + 2); i++) {
+                  for (int j = 1; j < (seats + seats + 2); j++) {
+                      if (i == 1) {
+                          if ((j < 3) || (j % 2 == 0)) {
+                              this.cinemaArray[i][j] = " ";
+                          } else {
+                              this.cinemaArray[i][j] = String.valueOf((j - 1) / 2);
+                          }
+                      } else {
+                          if (j == 1) {
+                              this.cinemaArray[i][j] = String.valueOf(i - 1);
+                          } else {
+                              if (j % 2 == 0) {
+                                  this.cinemaArray[i][j] = " ";
+                              } else {
+                                  this.cinemaArray[i][j] = "S";
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      
+          // Prints empty cinema seats as stored in 2D Array
+          public void printCinema(int rows, int seats) {
+              System.out.println("Cinema:");
+              for (int i = 1; i < (rows + 2); i++) {
+                  for (int j = 1; j < (seats + seats + 2); j++) {
+                      System.out.print(this.cinemaArray[i][j]);
+                  }
+                  System.out.println();
+              }
+          }
+      
+          // Marks chosen seat as occupied with a "B"
+          public void occupySeat(int pickedRow, int pickedSeat) {
+              this.cinemaArray[pickedRow + 1][(pickedSeat + pickedSeat) + 1] = "B";
+          }
+      
+          // Getter for cinemaArray
+          public String[][] getCinemaArray() {
+              return this.cinemaArray;
+          }
+      
+          // Getter for rows
+          public int getRows() {
+              return rows;
+          }
+      
+          // Getter for seats
+          public int getSeats() {
+              return seats;
+          }
+      }
+    learner_created: true
+  - name: src/cinema/Menu.java
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/133/stages/712/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 03 Feb 2024 17:20:39 UTC"
+record: 4

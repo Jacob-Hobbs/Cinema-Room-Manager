@@ -18,21 +18,29 @@ public class ProfitCalculator {
         Layout layout = new Layout(numOfRows, numOfSeats);
         layout.start(numOfRows, numOfSeats);
         System.out.println();
-        purchaseTicket(numOfRows, numOfSeats);
-    }
-
-    // Intakes row and seat number and outputs ticket cost
-    public void purchaseTicket(int numOfRows, int numOfSeats) {
-        System.out.println("Enter a row number:");
-        int rowNum = Integer.valueOf(scanner.nextLine());
-        System.out.println("Enter a seat number in that row:");
-        int seatNum = Integer.valueOf(scanner.nextLine());
+        int rowNum = getRowNumber();
+        int seatNum = getSeatNumber();
         System.out.println();
         System.out.println("Ticket price: $" + calculateSeatCost(rowNum, numOfRows, numOfSeats));
         System.out.println();
-        // FIXME : Creates new array instead of updating existing one.
-        Layout layout = new Layout(numOfRows, numOfSeats);
-        layout.occupySeat(rowNum, seatNum, numOfRows, numOfSeats);
+        purchaseTicket(numOfRows, numOfSeats, layout, rowNum, seatNum);
+    }
+
+    // Retrieves requested row number from user
+    public int getRowNumber() {
+        System.out.println("Enter a row number:");
+        return Integer.valueOf(scanner.nextLine());
+    }
+
+    // Retrieves requested seat number from user
+    public int getSeatNumber() {
+        System.out.println("Enter a seat number in that row:");
+        return Integer.valueOf(scanner.nextLine());
+    }
+
+    // Intakes row and seat number and outputs ticket cost
+    public void purchaseTicket(int numOfRows, int numOfSeats, Layout layout, int rowNum, int seatNum) {
+        layout.occupySeat(rowNum, seatNum);
         layout.printCinema(numOfRows, numOfSeats);
     }
 
@@ -40,7 +48,6 @@ public class ProfitCalculator {
     public int calculateSeatCost(int rowNum, int numOfRows, int numOfSeats) {
         int totalSeats = numOfRows * numOfSeats;
         int frontHalfRows = (numOfRows / 2);
-        //int backHalfRows = (numOfRows - frontHalfRows);
         if (totalSeats <= 60 || rowNum <= frontHalfRows) {
             return 10;
         } else {
@@ -69,6 +76,7 @@ public class ProfitCalculator {
         totalIncome(numOfRows, numOfSeats);
     }
 
+    // Outputs total income of whole cinema
     public void totalIncome(int numOfRows, int numOfSeats) {
         System.out.println("Total income:");
         System.out.println("$" + calculateTotalProfit(numOfRows, numOfSeats));

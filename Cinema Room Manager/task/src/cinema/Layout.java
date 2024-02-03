@@ -3,9 +3,13 @@ package cinema;
 public class Layout {
 
     private final String[][] cinemaArray;
+    private final int rows;
+    private final int seats;
 
     public Layout(int rows, int seats) {
         this.cinemaArray = new String[rows + 2][seats + seats + 2];
+        this.rows = rows;
+        this.seats = seats;
     }
 
     // Controls the execution order of Layout statements
@@ -16,9 +20,6 @@ public class Layout {
 
     // Initializes empty cinema seats within 2D Array
     public void initializeEmptyCinema(int rows, int seats) {
-        
-        //this.cinemaArray = new String[rows + 2][seats + seats + 2];
-        
         for (int i = 1; i < (rows + 2); i++) {
             for (int j = 1; j < (seats + seats + 2); j++) {
                 if (i == 1) {
@@ -53,12 +54,23 @@ public class Layout {
         }
     }
 
-
-    public void occupySeat(int pickedRow, int pickedSeat, int rows, int seats) {
+    // Marks chosen seat as occupied with a "B"
+    public void occupySeat(int pickedRow, int pickedSeat) {
         this.cinemaArray[pickedRow + 1][(pickedSeat + pickedSeat) + 1] = "B";
     }
 
+    // Getter for cinemaArray
     public String[][] getCinemaArray() {
         return this.cinemaArray;
+    }
+
+    // Getter for rows
+    public int getRows() {
+        return rows;
+    }
+
+    // Getter for seats
+    public int getSeats() {
+        return seats;
     }
 }

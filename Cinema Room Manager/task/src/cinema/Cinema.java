@@ -6,5 +6,4 @@ public class Cinema {
         ProfitCalculator profitCalculator = new ProfitCalculator();
         profitCalculator.start();
     }
-
 }

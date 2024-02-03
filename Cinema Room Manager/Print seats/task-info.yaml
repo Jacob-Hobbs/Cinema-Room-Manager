@@ -77,7 +77,7 @@ files:
           }
       }
     learner_created: false
-  - name: src/cinema/Layout.java
+  - name: src/cinema/Menu.java
     visible: true
     learner_created: true
 feedback_link: https://hyperskill.org/projects/133/stages/709/implement#comment
